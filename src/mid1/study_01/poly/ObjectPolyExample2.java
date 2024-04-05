@@ -2,15 +2,25 @@ package mid1.study_01.poly;
 
 public class ObjectPolyExample2 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Car car = new Car();
-        Object object = new Object();
+        Car car = new Car("Model Y");
+        Dog dog1 = new Dog("멍멍이1 ", 2);
+        Dog dog2 = new Dog("멍멍이2 ", 5);
 
-        Object[] objects = {dog,car,object};
-        size(objects);
-    }
 
-    private static void size(Object[] objects) {
-        System.out.println("전달된 객체의 수는: " + objects.length);
+        System.out.println("1. 단순 toString 호출");
+        System.out.println(car.toString());
+        System.out.println(dog1.toString());
+        System.out.println(dog2.toString());
+
+        System.out.println("2. println 내부에서 toString 호출");
+        System.out.println(car);
+        System.out.println(dog1);
+        System.out.println(dog2);
+
+        System.out.println("3. Object 다영성 활용");
+        ObjectPrinter.print(car);
+        ObjectPrinter.print(dog1);
+        ObjectPrinter.print(dog2);
+
     }
 }

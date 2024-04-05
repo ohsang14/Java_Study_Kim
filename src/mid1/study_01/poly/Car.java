@@ -1,7 +1,9 @@
 package mid1.study_01.poly;
 
 public class Car {
-    public void move(){
-        System.out.println("자동차 이동");
+    private String carName;
+
+    public Car(String carName){
+        this.carName = carName;
     }
 }

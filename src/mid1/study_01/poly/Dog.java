@@ -1,7 +1,18 @@
 package mid1.study_01.poly;
 
 public class Dog {
-    public void sound(){
-        System.out.println("멍멍");
+    private String dogName;
+    private int age;
+
+    public Dog(String dogName, int age) {
+        this.dogName = dogName;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "dogName='" + dogName + '\'' +
+                '}';
     }
 }
