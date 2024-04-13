@@ -2,10 +2,10 @@ package mid1.study_01.lang.string;
 
 public class CharArrayMain {
     public static void main(String[] args) {
-        char[] charArr = new char[]{'a', 'b', 'c', 'd', 'e', 'f'};
+        char[] charArr = new char[]{'h','e','l','l','o'};
         System.out.println(charArr);
 
         String str = "hello";
-        System.out.println(str);
+        System.out.println("str = " + str);
     }
 }
