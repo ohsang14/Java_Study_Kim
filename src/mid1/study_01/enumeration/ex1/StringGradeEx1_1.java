@@ -1,7 +1,5 @@
 package mid1.study_01.enumeration.ex1;
 
-import mid1.study_01.enumeration.ex0.DiscountService;
-
 public class StringGradeEx1_1 {
     public static void main(String[] args) {
         int price = 10000;
